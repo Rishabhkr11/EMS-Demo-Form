@@ -33,8 +33,8 @@
       <input
         type="password"
         placeholder="Enter Password"
-        name="psw"
-        id="psw"
+        name="pswrd"
+        id="pswrd"
         required
       />
 
@@ -42,14 +42,17 @@
       <input
         type="password"
         placeholder="Repeat Password"
-        name="psw-repeat"
-        id="psw-repeat"
+        name="cnfrmPswrd"
+        id="cnfrmPswrd"
         required
       />
     </div>
-    <button class="registerbtn">Register</button>
-    <button class="loginbtn">Login</button>
+    <button onclick="register()" class="registerbtn">Register</button>
+    <button onclick="login()" class="loginbtn">Login</button>
   </body>
 
-  <script src="./index.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+  <script src="index.js"></script>
 </html>
